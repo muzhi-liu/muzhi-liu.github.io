@@ -1,0 +1,155 @@
+% CV — Muzhi Liu
+% Vitae-style layout: hanging small-caps section labels in the left margin,
+% content column with right-aligned dates. Palatino (old-style figures).
+% Content source: CV___Liu/main.tex (verbatim facts).
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,left=0.95in,right=0.95in,top=0.8in,bottom=0.85in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ebgaramond}
+\usepackage{microtype}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Page number bottom right
+\makeatletter
+\def\@oddfoot{\hfil\normalfont\small\thepage}
+\def\@evenfoot{\@oddfoot}
+\def\@oddhead{}\def\@evenhead{}
+\makeatother
+
+% ---- vitae layout dimensions ----
+\newlength{\sidebar}\setlength{\sidebar}{1.15in}
+\newlength{\sidegap}\setlength{\sidegap}{0.30in}
+\newlength{\contentindent}\setlength{\contentindent}{\dimexpr\sidebar+\sidegap\relax}
+\newlength{\contentwidth}
+\newlength{\datewd}
+
+% Section: small-caps label hanging in the left margin; content flows at \leftskip.
+% Resets the per-section paper counter.
+\newcommand{\cvsection}[1]{%
+  \par\vspace{0.9em}%
+  \Needspace*{3\baselineskip}%
+  \setcounter{paper}{0}%
+  \noindent\llap{\parbox[t][0pt][t]{\sidebar}{\raggedright\textsc{\small #1}}\hspace*{\sidegap}}%
+}
+
+% One entry with the date right-aligned on the first line; the text column is
+% narrowed by the date's natural width so long entries wrap before the date.
+\newcommand{\cvline}[2]{%
+  \par\settowidth{\datewd}{#2}%
+  \noindent\begin{minipage}[t]{\dimexpr\contentwidth-\datewd-0.18in\relax}%
+    \setlength{\parindent}{0pt}\raggedright\hyphenpenalty=10000\relax
+    \hangindent=0.18in\hangafter=1 #1%
+  \end{minipage}\hfill\mbox{#2}\par\vspace{1.5pt}}
+
+% Numbered paper entry (hanging indent aligns wrapped lines after the number).
+\newcounter{paper}
+\newcommand{\paperitem}[1]{%
+  \stepcounter{paper}%
+  {\hangindent=0.22in\hangafter=1\noindent\thepaper.\hspace{0.5em}#1\par}\vspace{0.25em}}
+
+\newcommand{\subline}[1]{{\hangindent=0.36in\hangafter=1\noindent\hspace*{0.18in}#1\par}}
+
+\begin{document}
+
+% ================= Header =================
+{\huge\bfseries Muzhi Liu}\par
+\vspace{4pt}
+\hrule height 0.4pt
+\vspace{6pt}
+\begin{minipage}[t]{0.55\textwidth}
+Department of Political Science\\
+Columbia University\\
+New York, NY
+\end{minipage}%
+\begin{minipage}[t]{0.45\textwidth}\raggedleft
+E-mail: \href{mailto:ml4967@columbia.edu}{ml4967@columbia.edu}\\
+Phone: (470) 659-0051\\
+Website: \href{https://muzhi-liu.github.io}{muzhi-liu.github.io}
+\end{minipage}
+\vspace{7pt}
+\hrule height 1pt
+
+% Everything below hangs off the sidebar.
+\leftskip=\contentindent
+\setlength{\contentwidth}{\dimexpr\textwidth-\contentindent\relax}
+
+\cvsection{Education}%
+\cvline{Ph.D.\ in Political Science, Columbia University}{expected May 2028}
+\cvline{Concurrent M.A.\ in Statistics, Columbia University}{expected May 2027}
+{\hangindent=0.18in\hangafter=1\noindent\textit{Selected coursework:} Causal Inference, Field Experiment, Statistical Inference, Advanced Probability Theory, Bayesian Statistics, Machine Learning Theory \& Application, Stochastic Processes, Game Theory, Optimization, Real Analysis, ODE \& PDE. \textit{Planned:} Fourier Analysis, Topology, Algebraic Curves.\par}
+\vspace{0.45em}
+\cvline{B.A.\ in Political Science, \textit{magna cum laude}, Emory University, Atlanta, GA}{May 2023}
+
+\cvsection{Research Interests}%
+Political Methodology; Political Behavior; Public Opinion; Political Economy\par
+
+\cvsection{Methods and Skills}%
+Causal inference; Experiments; Text-as-data/NLP; Machine Learning; LLM-assisted measurement; Mathematical modeling and analysis\par
+\vspace{0.3em}
+\textbf{Tools:} R, Python, Stan, \LaTeX, Git, SQL, Qualtrics, CloudResearch, Prolific\par
+
+\cvsection{Revise and\\Resubmit}%
+\paperitem{``Demobilization Without Backlash: Campaign Donations and the DOGE Workforce Reduction.'' [\textit{Revise and resubmit at} \textbf{\textit{Political Behavior}}]}
+
+\cvsection{Manuscripts\\Under Review}%
+\paperitem{``When Partisan Anchors Make Parties Legible: Transnational Partisan Generalization After U.S.\ Political Violence.'' [\textit{Under review}]}
+\paperitem{``Estimand-First Comparative Text Analysis: Measuring Discourse Change Across Co-Exposed Platforms.'' [\textit{Submitted}]}
+\paperitem{``When Group Issues and Core Issues Collide: Evidence from Tailored Conjoint Experiments on Latino Voters'' (with Yamil Velez). [\textit{Under review}]}
+\paperitem{``Democracy Out of Sync: Circadian Misalignment and the Cost of Voting'' (with Xuan Li). [\textit{Submitted}]}
+
+\cvsection{Ongoing\\Projects}%
+\paperitem{``When Bad News Is Deniable: Holding Power and the Fragmentation of Partisan Economic Perceptions.'' [\textit{Draft in Progress}]}
+\paperitem{``Beyond the Ballot Box: Campaigns and the Politicization of Everyday Consumption.''}
+\paperitem{``Primary Election and Intra-Party Factions'' (with Shigeo Hirano and Sam Frederick).}
+
+\cvsection{Grants and\\Awards}%
+\cvline{IHS Mentorship Grant, Institute for Humane Studies (\$8,000)}{Summer 2026}
+\cvline{American Political Science Association, Spring Centennial Research Grant (\$2,500)}{Spring 2026}
+\cvline{Columbia Experimental Laboratory for Social Sciences Student Seed Grant (\$1,000)}{Fall 2025}
+\cvline{First Place, Young Public Opinion Scholar Competition, NY/PA--NJ AAPOR (\$1,000)}{Summer 2025}
+
+\cvsection{Conference\\Presentations}%
+\cvline{\textbf{American Political Science Association Annual Meeting (APSA)}}{Sep.\ 2026}
+\subline{Li, X.; \textbf{Liu, M.} ``Democracy Out of Sync: Circadian Misalignment and the Cost of Voting.''}
+\subline{\textbf{Liu, M.} ``When Partisan Anchors Make Parties Legible: Transnational Partisan Generalization After U.S.\ Political Violence.''}
+\vspace{0.3em}
+\cvline{\textbf{Elections, Public Opinion, and Voting Behavior Conference}}{May 2026}
+\subline{Li, X.; \textbf{Liu, M.} ``Democracy Out of Sync: Circadian Misalignment and the Cost of Voting.''}
+\vspace{0.3em}
+\cvline{\textbf{Midwest Political Science Association Annual Conference (MPSA)}}{Apr.\ 2026}
+\subline{\textbf{Liu, M.} ``Electoral Spectators: The 2024 U.S.\ Presidential Election and Online Political Discourse in China.''}
+\vspace{0.3em}
+\cvline{\textbf{American Association for Public Opinion Research Annual Conference (AAPOR)}}{May 2025}
+\subline{Velez, Y.; \textbf{Liu, M.} ``In Their Own Words: A Tailored Approach to Measuring Politicized Group Attachments.''}
+
+\cvsection{Teaching\\Experience}%
+\cvline{\textbf{Teaching Assistant, Columbia University}}{2024--2026}
+\vspace{0.2em}
+{\hangindent=0.18in\hangafter=1\noindent\textit{Graduate courses:} Quantitative Methods IV: Advanced Statistical Modeling (Spring 2026); Quantitative Methods III: Field Experiments (Fall 2025); Math and Statistics in Political Science (Spring 2024).\par}
+\vspace{0.2em}
+{\hangindent=0.18in\hangafter=1\noindent\textit{Undergraduate courses:} Introduction to American Politics and Government (Summer 2024; Spring 2025).\par}
+
+\cvsection{Research\\Experience}%
+\cvline{\textbf{Research Assistant, Columbia University}}{2023--2024}
+{\hangindent=0.18in\hangafter=1\noindent\textit{Supervisors: Robert Shapiro and Alan Yang.} Public opinion and polarization projects; cleaned and merged survey datasets; implemented regression and robustness pipelines in R; produced publication-ready figures and tables.\par}
+\vspace{0.45em}
+\cvline{\textbf{Research Assistant, Emory University}}{2021--2023}
+{\hangindent=0.18in\hangafter=1\noindent\textit{Supervisors: Kiela Crabtree, Zachary Peskowitz, and Kevin Sparrow.} Research on political violence and minority politics; assembled datasets from public sources; conducted literature synthesis; supported survey/conjoint design and analysis; prepared replication-ready code and documentation.\par}
+
+\cvsection{Academic\\Service}%
+\cvline{Editorial Assistant, \textit{Political Science Quarterly}}{Mar.\ 2024--Spring 2026}
+\cvline{Linkage Chair, Political Science Graduate Student Council, Columbia University}{Jun.\ 2024--May 2025}
+\cvline{Member, Student Advisory Board, Emory University}{Sep.\ 2021--May 2023}
+
+\cvsection{Professional\\Experience}%
+\cvline{Community Engagement Intern, International Rescue Committee, Atlanta, GA}{Jun.\ 2023--Sep.\ 2023}
+\cvline{Academic Consultant and Instructor, Yuan Foundation, Washington, DC}{May 2023--Aug.\ 2023}
+\cvline{Research Assistant, Ashoka, Remote}{Jan.\ 2023--Apr.\ 2023}
+
+\end{document}

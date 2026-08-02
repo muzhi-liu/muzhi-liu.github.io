@@ -18,7 +18,9 @@ Live site: https://muzhi-liu.github.io
 - **Add a paper**: add an entry to `_bibliography/papers.bib` with a `keywords`
   field matching one of the research page sections (`cross-border`,
   `identity-voting`, `campaigns-everyday`), then push.
-- **Update CV**: replace `assets/pdf/CV___Liu.pdf`, then push.
+- **Update CV**: edit `cv/main.tex` (LaTeX source), compile with
+  `pdflatex main.tex`, copy the output over `assets/pdf/CV___Liu.pdf`,
+  then push. (Or just replace the PDF directly.)
 
 Pushes to `main` trigger the deploy workflow, which builds the site and
 publishes it to the `gh-pages` branch.
