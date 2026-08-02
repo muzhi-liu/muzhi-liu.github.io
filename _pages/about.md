@@ -6,7 +6,7 @@ subtitle: Ph.D. Student, Department of Political Science, Columbia University
 
 profile:
   align: right
-  image: headshot.png
+  image: headshot.jpg
   image_circular: false # crops the image to make it circular
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
