@@ -4,7 +4,7 @@ permalink: /research/
 title: research
 description: This page describes research projects I am currently working on. My work examines how political information, identity, and behavior interact across electoral, online, and everyday settings. Please reach me at ml4967@columbia.edu if you have any questions or are interested in collaborating.
 nav: true
-nav_order: 2
+nav_order: 1
 ---
 
 <!-- _pages/publications.md -->
