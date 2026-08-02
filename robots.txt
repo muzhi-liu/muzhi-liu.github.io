@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://muzhi-liu.github.io/sitemap.xml
+Sitemap: https://muzhi-liu.com/sitemap.xml
