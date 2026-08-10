@@ -2,28 +2,35 @@
 layout: page
 permalink: /programming/
 title: programming
-description: Statistical programming tools I build and maintain.
+description: Statistical programming tools and interfaces I build.
 nav: true
 nav_order: 4
 ---
 
-This page collects statistical programming tools I build. More programs will
-appear here over time.
-
 ## Practice Lab
 
+**A local-first practice manager for data science and statistical programming.**
+
+Practice Lab turns one-off coding questions into a reusable learning system.
+Users can capture a problem through a short form, launch a clean attempt
+directly in VS Code, record mistakes and confidence after each session, and
+revisit weak areas through a transparent review queue. A searchable history
+preserves earlier attempts without revealing their solutions during
+re-practice.
+
+The system separates public software from private learning records: the
+open-source repository contains the application, templates, tests, and
+synthetic demonstrations, while personal prompts, datasets, code, and progress
+remain in a user-selected local directory.
+
+**Python · FastAPI · Jinja · Quarto · R · VS Code · GitHub Actions**
+
 <p>
-  <a href="https://muzhi-liu.com/practice-lab/" class="btn btn-sm z-depth-0" role="button">Open the interface</a>
-  <a href="https://github.com/muzhi-liu/practice-lab" class="btn btn-sm z-depth-0" role="button">Use the template</a>
+  <a class="btn btn-sm z-depth-0" role="button" href="https://muzhi-liu.com/practice-lab/">View demo</a>
+  <a class="btn btn-sm z-depth-0" role="button" href="https://github.com/muzhi-liu/practice-lab">Source code</a>
+  <a class="btn btn-sm z-depth-0" role="button" href="https://github.com/muzhi-liu/practice-lab#installation-windows">Set up locally</a>
 </p>
 
-An open-source interface for practicing **R and Python** with structured,
-versioned record keeping — built for my own internal practice log. It
-organizes executable practice documents, self-testing pages with collapsed
-solutions, spaced review, and automated checks around
-[Quarto](https://quarto.org) and Git. No accounts, no database, fully local.
+---
 
-The repository is available as a template: anyone can copy it to run their
-own practice log. Everything you create with it — practices, attempts,
-review history — stays entirely on your own machine; nothing is shared with
-me. Built with [Claude Code](https://claude.com/claude-code).
+More statistical programs will appear on this page as they are released.
