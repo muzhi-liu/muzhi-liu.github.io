@@ -4,7 +4,7 @@ permalink: /watch-design/
 title: watch design
 description: Speculative mechanical watch concepts and dial designs.
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 Outside my academic work, I enjoy developing speculative watch concepts that combine mechanical constraints with visual storytelling. (Some of them have turned into real watches!)
