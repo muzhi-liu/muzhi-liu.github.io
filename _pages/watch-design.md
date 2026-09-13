@@ -3,7 +3,7 @@ layout: page
 permalink: /watch-design/
 title: watch design
 description: Speculative mechanical watch concepts and dial designs.
-nav: true
+nav: false
 nav_order: 4
 ---
 
