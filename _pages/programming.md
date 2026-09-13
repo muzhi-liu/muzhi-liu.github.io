@@ -43,8 +43,9 @@ optional deadline shorthand ("Send invoice fri"), check it off when it is
 done, and drag rows up and down as priorities shift. Deadline chips are
 colour-tiered, completed tasks fall into a weekly diary and archive, and every
 action is undoable. It runs from a single folder of plain HTML, CSS and
-JavaScript, keeps its data in the browser's local storage, and includes a
-small native Mac shell you can build from the Swift sources in the repository.
+JavaScript and keeps its data in the browser's local storage. It also comes
+as a native Mac app — a small AppKit and WebKit shell around the same files,
+built from one Swift source file with no Electron and no packages.
 
 I built it with Claude Code.
 
@@ -53,7 +54,7 @@ I built it with Claude Code.
 <p>
   <a class="btn btn-sm z-depth-0" role="button" href="https://muzhi-liu.com/rungs/">View demo</a>
   <a class="btn btn-sm z-depth-0" role="button" href="https://github.com/muzhi-liu/rungs">Source code</a>
-  <a class="btn btn-sm z-depth-0" role="button" href="https://github.com/muzhi-liu/rungs#run-as-a-mac-app">Run as a Mac app</a>
+  <a class="btn btn-sm z-depth-0" role="button" href="https://github.com/muzhi-liu/rungs/releases/latest">Download for Mac</a>
 </p>
 
 ---
