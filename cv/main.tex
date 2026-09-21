@@ -4,7 +4,7 @@
 % Content source: CV___Liu/main.tex (verbatim facts).
 \documentclass[11pt]{article}
 
-\usepackage[letterpaper,left=0.95in,right=0.95in,top=0.8in,bottom=0.85in]{geometry}
+\usepackage[letterpaper,left=0.85in,right=0.85in,top=0.6in,bottom=0.6in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{ebgaramond}
@@ -14,6 +14,7 @@
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
+\linespread{0.97}\selectfont % keeps the CV at two pages
 
 % Page number bottom right
 \makeatletter
@@ -32,8 +33,8 @@
 % Section: small-caps label hanging in the left margin; content flows at \leftskip.
 % Resets the per-section paper counter.
 \newcommand{\cvsection}[1]{%
-  \par\vspace{0.9em}%
-  \Needspace*{3\baselineskip}%
+  \par\vspace{0.7em}%
+  \Needspace*{5\baselineskip}%
   \setcounter{paper}{0}%
   \noindent\llap{\parbox[t][0pt][t]{\sidebar}{\raggedright\textsc{\small #1}}\hspace*{\sidegap}}%
 }
@@ -82,7 +83,9 @@ Website: \href{https://muzhi-liu.github.io}{muzhi-liu.github.io}
 \cvsection{Education}%
 \cvline{Ph.D.\ in Political Science, Columbia University}{expected May 2028}
 \cvline{Concurrent M.A.\ in Statistics, Columbia University}{expected May 2027}
-{\hangindent=0.18in\hangafter=1\noindent\textit{Selected coursework:} Causal Inference, Field Experiment, Statistical Inference, Advanced Probability Theory, Bayesian Statistics, Machine Learning Theory \& Application, Stochastic Processes, Game Theory, Optimization, Real Analysis, ODE \& PDE. \textit{Planned:} Fourier Analysis, Topology, Algebraic Curves.\par}
+{\hangindent=0.18in\hangafter=1\noindent\textit{Ph.D.\ coursework in the Departments of Mathematics and Statistics (2026--27):} Analysis and Probability I, Analysis II, Probability II; Theoretical Statistics I--II; Probabilistic Models and Machine Learning.\par}
+\vspace{0.2em}
+{\hangindent=0.18in\hangafter=1\noindent\textit{Additional coursework:} Causal Inference, Field Experiments, Bayesian Statistics, Stochastic Processes, Game Theory, Optimization, Differential Equations.\par}
 \vspace{0.45em}
 \cvline{B.A.\ in Political Science, \textit{magna cum laude}, Emory University, Atlanta, GA}{May 2023}
 
@@ -100,12 +103,12 @@ Causal inference; Experiments; Text-as-data/NLP; Machine Learning; LLM-assisted 
 
 \cvsection{Manuscripts\\Under Review}%
 \paperitem{``Borrowed Battlegrounds: When U.S.\ Political Violence Becomes Partisan News Abroad---Evidence from Five Language Communities on X (2024--2025).'' [\textit{Submitted}]}
-\paperitem{``Estimand-First Comparative Text Analysis: Measuring Discourse Change Across Co-Exposed Platforms.'' [\textit{Submitted}]}
+\paperitem{``Estimand-First Comparative Text Analysis: Measuring Discourse Change Across Co-Exposed Platforms.'' [\textit{Under review}]}
 \paperitem{``Democracy Out of Sync: Circadian Misalignment and the Cost of Voting'' (with Xuan Li). [\textit{Submitted}]}
 
 \cvsection{Ongoing\\Projects}%
-\paperitem{``When Bad News Is Deniable: Holding Power and the Fragmentation of Partisan Economic Perceptions.'' [\textit{Draft in Progress}]}
-\paperitem{``Beyond the Ballot Box: Campaigns and the Politicization of Everyday Consumption.''}
+\paperitem{``Claiming Corporate Success: Economic Exposure and Support for the Incumbent Party.'' [\textit{Draft in Progress}]}
+\paperitem{``Buying American Abroad: Political Identity and Consumer Choice'' (with Donald P. Green).}
 \paperitem{``Primary Election and Intra-Party Factions'' (with Shigeo Hirano and Sam Frederick).}
 
 \cvsection{Grants and\\Awards}%
@@ -128,12 +131,18 @@ Causal inference; Experiments; Text-as-data/NLP; Machine Learning; LLM-assisted 
 \cvline{\textbf{American Association for Public Opinion Research Annual Conference (AAPOR)}}{May 2025}
 \subline{Velez, Y.; \textbf{Liu, M.} ``In Their Own Words: A Tailored Approach to Measuring Politicized Group Attachments.''}
 
+\cvsection{Seminar\\Presentations}%
+\cvline{Political Science Graduate Student Seminar, Columbia University}{\begin{tabular}[t]{@{}r@{}}Mar.\ 2026\\Sep.\ 2026\end{tabular}}
+\cvline{Columbia--NYU Graduate Student Seminar in Political Science}{Apr.\ 2026}
+\cvline{American Politics Graduate Student Seminar, Columbia University}{\begin{tabular}[t]{@{}r@{}}Mar.\ 2025\\Oct.\ 2025\\Mar.\ 2026\end{tabular}}
+\cvline{Comparative Politics Seminar, Columbia University}{Oct.\ 2025}
+
 \cvsection{Teaching\\Experience}%
 \cvline{\textbf{Teaching Assistant, Columbia University}}{2024--2026}
 \vspace{0.2em}
 {\hangindent=0.18in\hangafter=1\noindent\textit{Graduate courses:} Quantitative Methods IV: Advanced Statistical Modeling (Spring 2026); Quantitative Methods III: Field Experiments (Fall 2025); Math and Statistics in Political Science (Spring 2024).\par}
 \vspace{0.2em}
-{\hangindent=0.18in\hangafter=1\noindent\textit{Undergraduate courses:} Introduction to American Politics and Government (Summer 2024; Spring 2025).\par}
+{\hangindent=0.18in\hangafter=1\noindent\textit{Undergraduate courses:} Experiments (Fall 2026); Introduction to American Politics and Government (Summer 2024; Spring 2025).\par}
 
 \cvsection{Research\\Experience}%
 \cvline{\textbf{Research Assistant, Columbia University}}{2023--2024}
