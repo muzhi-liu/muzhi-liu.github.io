@@ -55,6 +55,7 @@ I built it with Claude Code.
 **JavaScript · HTML · CSS (Chrome extension, Manifest V3)**
 
 <p>
+  <a class="btn btn-sm z-depth-0" role="button" href="https://github.com/muzhi-liu/back-to-work">Source code</a>
   <a class="btn btn-sm z-depth-0" role="button" href="{{ '/assets/zip/back-to-work.zip' | relative_url }}" download="back-to-work.zip">Download (.zip)</a>
 </p>
 
