@@ -44,7 +44,7 @@ bottom of the page ("Check #7 today. Staring doesn't make it go up. We
 checked."). The note fades after five seconds, lets clicks pass straight
 through it, and gets less patient as the count climbs. The toolbar button
 shows today's count and the past week, with a switch that pauses everything.
-It asks for a single permission, keeps its tally in the browser's local
+It runs only on robinhood.com, keeps its tally in the browser's local
 storage, reads nothing from the page and sends nothing anywhere. It is an
 independent project, not affiliated with Robinhood, and it is not on the
 Chrome Web Store: unzip the download and load the folder from
