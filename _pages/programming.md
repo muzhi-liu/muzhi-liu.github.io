@@ -33,4 +33,31 @@ I built it with Claude Code.
 
 ---
 
+## Back to Work
+
+**A browser extension that counts how often you check your brokerage account.**
+
+Back to Work is a small Chrome extension for anyone who looks at Robinhood
+more often than the market moves. Each time the Robinhood tab comes into view
+it adds one to the day's tally and slides in a short, see-through note at the
+bottom of the page ("Check #7 today. Staring doesn't make it go up. We
+checked."). The note fades after five seconds, lets clicks pass straight
+through it, and gets less patient as the count climbs. The toolbar button
+shows today's count and the past week, with a switch that pauses everything.
+It asks for a single permission, keeps its tally in the browser's local
+storage, reads nothing from the page and sends nothing anywhere. It is an
+independent project, not affiliated with Robinhood, and it is not on the
+Chrome Web Store: unzip the download and load the folder from
+`chrome://extensions` with Developer mode switched on.
+
+I built it with Claude Code.
+
+**JavaScript · HTML · CSS (Chrome extension, Manifest V3)**
+
+<p>
+  <a class="btn btn-sm z-depth-0" role="button" href="{{ '/assets/zip/back-to-work.zip' | relative_url }}" download="back-to-work.zip">Download (.zip)</a>
+</p>
+
+---
+
 More programs will appear on this page as they are released.
